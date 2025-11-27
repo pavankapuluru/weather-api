@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <div class="inp">
+          <input type="text" id="cityInput" placeholder="Enter City Name" />
+          <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="box-main" id="boxMain">
+          <h1 id="country">New York</h1>
+          <!-- <img
+            src="./assets/images/clouds.png"
+            alt="weather"
+            id="weatherIcon"
+            class="weather-icon"
+          /> -->
+          <h1 id="temp">23°C</h1>
+          <p id="des">Heavy Intense Rain</p>
+
+          <div class="two">
+            <div class="inner">
+              <div class="hum">
+                <img src="./assets/images/humidity.png" alt="" />
+                <h1 id="humidity">90%</h1>
+              </div>
+              <p>Humidity</p>
+            </div>
+
+            <div class="inner">
+              <div class="hum">
+                <img src="./assets/images/wind.jpg" alt="" />
+                <h1 id="wind">90 km/h</h1>
+              </div>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+
+        <p
+          id="err"
+          style="
+            display: none;
+            color: #ff6b6b;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+          "
+        >
+          City name is invalid!
+        </p>
+      </div>
+    </div>
+
+    <script type="module" src="./assets/js/index.js"></script>
+  </body>
+</html>
